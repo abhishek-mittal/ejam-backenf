@@ -6,6 +6,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
 var router = express_1.default.Router();
 // Users routes
-var deployment_1 = __importDefault(require("@routes/deployment"));
+var deployment_1 = __importDefault(require("./deployment"));
 router.use(deployment_1.default);
 exports.default = router;

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var connection_1 = require("@config/connection");
+var connection_1 = require("./../../src/config/connection");
 var mongoose_1 = require("mongoose");
 var T = mongoose_1.Schema.Types;
 var DeploymentSchema = new mongoose_1.Schema({

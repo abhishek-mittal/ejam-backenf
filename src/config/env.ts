@@ -15,7 +15,7 @@ interface IConfig {
 const NODE_ENV: string = process.env.NODE_ENV || 'development';
 
 const development: IConfig = {
-    port: process.env.PORT || 3000,
+    port: process.env.now || process.env.PORT || 3000,
     database: {
         MONGODB_URI: process.env.MONGODB_URI || 'mongodb+srv://ejammer:ejamtroop@ejam-task-swrxl.mongodb.net/test?retryWrites=true&w=majority&replSet=rs0',
         MONGODB_DB_MAIN: process.env.MONGODB_DB_MAIN || 'users_db'

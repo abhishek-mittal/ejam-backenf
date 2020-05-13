@@ -1,4 +1,4 @@
-import { db }  from "@config/connection";
+import { db }  from "./../../src/config/connection";
 import { Document, Schema } from 'mongoose';
 
 const T = Schema.Types;

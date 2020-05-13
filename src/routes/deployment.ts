@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { addDeployments, getDeployments, deleteDeployments } from "@controllers/Deployment" 
+import { addDeployments, getDeployments, deleteDeployments } from "./../../src/controllers/Deployment" 
 const router: Router = Router();
 
 router.get('/deployments', getDeployments);

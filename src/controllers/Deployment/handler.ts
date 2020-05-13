@@ -1,4 +1,4 @@
-import DeployementModel, { IDeploymentModel } from "@models/deployment";
+import DeployementModel, { IDeploymentModel } from "./../../../src/models/deployment";
 import * as Joi from 'joi';
 import DeploymentValidation from "./validations";
 

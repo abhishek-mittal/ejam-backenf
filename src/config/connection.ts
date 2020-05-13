@@ -1,5 +1,5 @@
 import mongoose, { createConnection, disconnect } from 'mongoose';
-import env from "@config/env";
+import env from "./env";
 
 interface IConnectOptions {
     autoReconnect: boolean;

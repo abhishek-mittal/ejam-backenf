@@ -1,5 +1,5 @@
 import * as Joi from 'joi';
-import { IDeploymentModel } from '@models/deployment';
+import { IDeploymentModel } from './../../../src/models/deployment';
 
 class DeploymentValidation {
 

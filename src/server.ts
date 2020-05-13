@@ -8,17 +8,12 @@ import { inject, errorHandler } from "express-custom-error"
 inject(); // Patch express in order to use async / await syntax
 
 // Require Dependencies
-import env from '@config/env'
+import env from './config/env'
 import express from "express"
 import cookieParser from "cookie-parser"
 import cors from "cors"
 import helmet from "helmet"
 
-
-import logger from "@util/logger"
-
-
-// Load .env Enviroment Variables to process.env
 
 const { port: PORT } = env;
 
@@ -31,8 +26,6 @@ const app = express();
 app.use(express.json( { limit: '50mb' } ));
 app.use(express.urlencoded( { extended: true, limit: '10mb' } ));
 
-// Configure custom logger middleware
-app.use(logger.dev, logger.combined);
 
 app.use(cookieParser());
 app.use(cors());

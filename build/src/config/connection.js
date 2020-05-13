@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var mongoose_1 = require("mongoose");
-var env_1 = __importDefault(require("@config/env"));
+var env_1 = __importDefault(require("./env"));
 var connectOptions = {
     autoReconnect: true,
     reconnectTries: Number.MAX_VALUE,

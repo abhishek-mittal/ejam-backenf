@@ -5,7 +5,7 @@ const router = express.Router();
 
 // Users routes
 
-import deployment from "@routes/deployment";
+import deployment from "./deployment";
 
 router.use(deployment);
 

@@ -9,21 +9,17 @@ require("module-alias/register");
 var express_custom_error_1 = require("express-custom-error");
 express_custom_error_1.inject(); // Patch express in order to use async / await syntax
 // Require Dependencies
-var env_1 = __importDefault(require("@config/env"));
+var env_1 = __importDefault(require("./config/env"));
 var express_1 = __importDefault(require("express"));
 var cookie_parser_1 = __importDefault(require("cookie-parser"));
 var cors_1 = __importDefault(require("cors"));
 var helmet_1 = __importDefault(require("helmet"));
-var logger_1 = __importDefault(require("@util/logger"));
-// Load .env Enviroment Variables to process.env
 var PORT = env_1.default.port;
 // Instantiate an Express Application
 var app = express_1.default();
 // Configure Express App Instance
 app.use(express_1.default.json({ limit: '50mb' }));
 app.use(express_1.default.urlencoded({ extended: true, limit: '10mb' }));
-// Configure custom logger middleware
-app.use(logger_1.default.dev, logger_1.default.combined);
 app.use(cookie_parser_1.default());
 app.use(cors_1.default());
 app.use(helmet_1.default());

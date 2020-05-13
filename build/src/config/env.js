@@ -11,7 +11,7 @@ var dotenv = __importStar(require("dotenv"));
 dotenv.config();
 var NODE_ENV = process.env.NODE_ENV || 'development';
 var development = {
-    port: process.env.PORT || 3000,
+    port: process.env.now || process.env.PORT || 3000,
     database: {
         MONGODB_URI: process.env.MONGODB_URI || 'mongodb+srv://ejammer:ejamtroop@ejam-task-swrxl.mongodb.net/test?retryWrites=true&w=majority&replSet=rs0',
         MONGODB_DB_MAIN: process.env.MONGODB_DB_MAIN || 'users_db'

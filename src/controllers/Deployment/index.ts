@@ -1,6 +1,5 @@
-import { IDeploymentModel } from "@models/deployment";
 import { NextFunction, Request, Response } from "express";
-import  DH from './handler'
+import DH from './handler';
 
 export async function addDeployments(req: Request, res: Response, next: NextFunction): Promise < void > {
     try {
