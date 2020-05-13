@@ -57,7 +57,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var deployment_1 = __importDefault(require("./../../../src/models/deployment"));
+var deployment_1 = __importDefault(require("./../../models/deployment"));
 var validations_1 = __importDefault(require("./validations"));
 var deploymentHandler = {
     getDeployments: function () {

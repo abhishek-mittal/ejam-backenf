@@ -7,10 +7,9 @@
         "setup": "npm install && npm update",
         "tsc": "tsc -outDir build/src",
         "build": "npm run tsc",
-        "start": "npm run build && node ./build/src/server.js",
-        "dev:start": "ts-node-dev --transpileOnly ./src/server.ts",
+        "start": "ts-node-dev --transpileOnly ./src/server.ts",
         "dev": "ts-node-dev --respawn --transpileOnly ./src/server.ts",
-        "prod": "npm run build && node ./build/src/server.js"
+        "prod": "node ./server.js"
     },
     "keywords": [
         "express",
