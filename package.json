@@ -5,7 +5,7 @@
     "main": "src/server.js",
     "scripts": {
         "setup": "npm install && npm update",
-        "tsc": "tsc",
+        "tsc": "tsc -outDir build/src",
         "build": "npm run tsc",
         "start": "ts-node-dev --transpileOnly ./src/server.ts",
         "dev": "ts-node-dev --respawn --transpileOnly ./src/server.ts",
